@@ -3,6 +3,11 @@ import '../App.css';
 import Header from '../components/Header';
 
 class Home extends Component {
+  
+  componentDidMount() {
+    document.title = "Portfolio Antoine Lamontagne";
+  }  
+
   render() {
     return (
       <div className="Home">
