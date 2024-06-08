@@ -13,7 +13,7 @@ function ProjectList() {
 
     return (
         <div>
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <ul>
                 {projects.map((project) => (
                     <li key={project.id}>
