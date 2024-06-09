@@ -5,11 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hr {
+  background: rgba(255, 255, 255, 0.2);
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 1px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.info p {
+  color: grey;
+  font-weight: lighter;
+}
+
+.horizontal-list {
+  list-style-type: none; /* Supprime les puces par défaut */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-list li {
+  margin: 0 10px;
+  padding-left: 30px; /* Pour laisser de la place pour l'image de la puce */
+  position: relative;
+}
+
+.horizontal-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Largeur de l'image */
+  height: 20px; /* Hauteur de l'image */
+  background-size: contain; /* Ajuste l'image à la taille du conteneur */
+  background-repeat: no-repeat;
+}
+
+.item1::before {
+  background-image: url('images/LinkedIn.svg.png'); /* Chemin de l'image pour le premier élément */
+}
+
+.item2::before {
+  background-image: url('images/Facebook.png'); /* Chemin de l'image pour le deuxième élément */
+}
+
+.item3::before {
+  background-image: url('images/Instagram.png'); /* Chemin de l'image pour le troisième élément */
+}
+
+.item4::before {
+  background-image: url('images/GitHub.svg.png'); /* Chemin de l'image pour le quatrième élément */
 }
