@@ -111,11 +111,11 @@ code {
 }
 
 .item2::before {
-  background-image: url('images/Facebook.png'); /* Chemin de l'image pour le deuxième élément */
+  background-image: url('images/Instagram.png'); /* Chemin de l'image pour le deuxième élément */
 }
 
 .item3::before {
-  background-image: url('images/Instagram.png'); /* Chemin de l'image pour le troisième élément */
+  background-image: url('images/Facebook.png'); /* Chemin de l'image pour le troisième élément */
 }
 
 .item4::before {
