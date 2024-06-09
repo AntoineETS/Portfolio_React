@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import ProjectList from './components/ProjectList';
+import CV from './components/CV';
 import About from './components/About';
 import Contact from './components/Contact';
 
@@ -22,7 +22,7 @@ function App() {
             <Header activeTab={activeTab} onTabChange={handleTabChange} />
             <div>
                 {activeTab === 'home' && <Home />}
-                {activeTab === 'projects' && <ProjectList />}
+                {activeTab === 'cv' && <CV />}
                 {activeTab === 'about' && <About />}
                 {activeTab === 'contact' && <Contact />}
             </div>
