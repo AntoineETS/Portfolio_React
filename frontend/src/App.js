@@ -14,7 +14,7 @@ function App() {
     };
 
     useEffect(() => {
-      document.title = "Antoine Lamontagne | Portfolio"; // Définissez le titre de l'onglet ici
+      document.title = "Antoine Lamontagne | Portfolio";
   }, []);
 
     return (
