@@ -28,3 +28,8 @@ jobs:
         run: npm test
         env:
           CI: true
+
+      - name: Display permissions and file details
+        run: |
+          ls -l
+          whoami
